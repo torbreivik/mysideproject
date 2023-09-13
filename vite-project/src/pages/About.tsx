@@ -10,6 +10,6 @@ const CenterSelf = styled.div`
 
 export function About() {
     const { width, height } = getScreenDimensions();
-    const url = `https://loremflickr.com/${width}/${height}`;
+    const url = `https://loremflickr.com/${width}/${height}/kitten`;
     return <CenterSelf>{<img src={url} />}</CenterSelf>;
 }
