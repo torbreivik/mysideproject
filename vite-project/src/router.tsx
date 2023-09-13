@@ -1,12 +1,21 @@
 import { createBrowserRouter, createRoutesFromElements, Route } from "react-router-dom";
-import App from "./App.tsx";
 import Playground from "./pages/Playground.tsx";
 import { Landing } from "./pages/Landing.tsx";
+import { MainLayout } from "./components/MainLayout.tsx";
+import { Home } from "./pages/Home.tsx";
+import { About } from "./pages/About.tsx";
+import { Services } from "./pages/Services.tsx";
 
 export const router = createBrowserRouter(
     createRoutesFromElements(
         <>
-            <Route path="/" element={<Landing />} />
+            <Route path="/" element={<MainLayout />}>
+                <Route index element={<Landing />} />
+                <Route path="home" element={<Home />} />
+                <Route path="about" element={<About />} />
+                <Route path="services" element={<Services />} />
+            </Route>
+            <Route path="/playground" element={<Playground />} />
             <Route path="/playground" element={<Playground />} />
         </>
     )
