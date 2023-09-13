@@ -3,12 +3,13 @@ import "../App.css";
 import "./landing.css";
 import styled, { keyframes } from "styled-components";
 
+const columnBreakPoint = 1400;
+
 const PageWrapper = styled.main`
-    min-width: 98.5vw;
+    width: calc(99vw);
     min-height: 99vh;
     padding: 0;
     margin: auto;
-    margin-left: 5px;
     background-color: #111111;
 `;
 
@@ -21,6 +22,7 @@ const NavBar = styled.nav`
     padding: 24px;
     border-bottom: 1px solid #404040;
     margin-bottom: 62px;
+    flex-wrap: wrap;
 `;
 
 const LogoText = styled.h1`
@@ -34,6 +36,10 @@ const Body = styled.section`
     flex-direction: row;
     min-height: 88vh;
     padding: 24px;
+    @media screen and (max-width: ${columnBreakPoint}px) {
+        flex-direction: column;
+        justify-content: center;
+    }
 `;
 
 const LeftSection = styled.section`
@@ -41,16 +47,25 @@ const LeftSection = styled.section`
     justify-content: center;
     flex-basis: 1;
     min-width: 40%;
+    @media screen and (max-width: ${columnBreakPoint}px) {
+        padding: 24px;
+        margin-bottom: 64px;
+        /* justify-content: flex-start; */
+    }
 `;
 
 const RightSection = styled.section`
     display: flex;
     flex-direction: column;
-    min-height: 100%;
     flex-basis: 1;
     flex-grow: 1;
     padding: 54px;
     gap: 42px;
+    @media screen and (max-width: ${columnBreakPoint}px) {
+        width: 80vw;
+        padding: 24px;
+        margin-bottom: 64px;
+    }
 `;
 
 const HeroImage = styled.img`
@@ -59,6 +74,12 @@ const HeroImage = styled.img`
     border-radius: 50%;
     display: block;
     object-fit: cover;
+    @media screen and (max-width: ${columnBreakPoint}px) {
+        width: 70vw;
+        max-width: 600px;
+        height: 70vw;
+        max-height: 600px;
+    }
 `;
 
 const Footer = styled.section`
@@ -182,9 +203,9 @@ export function Landing() {
                 <RightSection>
                     <BigAssTitle>TOR THE COWBOY CODER</BigAssTitle>
                     <BodyText>
-                        In the Wild West of the web, Tor lassos bugs faster than a gunslinger draws his six-shooter.
-                        With sharpshootin' skills in HTML to JavaScript, get a site slicker than a greased pig at a
-                        county fair. Glitches get stitches - ride into the sunset with Tor.
+                        In the Wild West of the web, Tor lassos bugs faster than a gunslinger shoots his foe. With
+                        sharpshootin' skills in HTML to JavaScript, get a site slicker than a greased pig at a county
+                        fair. Glitches get stitches - ride into the sunset with Tor.
                     </BodyText>
                     <ButtonCTA onClick={() => (window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ")}>
                         Shoot me a message!
