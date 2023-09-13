@@ -129,8 +129,8 @@ const pulse = keyframes`
     }
     50% {
         transform: scale(1.15) rotate(2deg);
-        background-color: #810069;
-        border-color: #810069;
+        background-color: #fd9c00;
+        border-color: #fd9c00;
     }
 
     100% {
