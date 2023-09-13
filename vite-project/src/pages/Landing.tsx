@@ -1,5 +1,4 @@
 import { useNavigate } from "react-router";
-import "../App.css";
 import "./landing.css";
 import styled, { keyframes } from "styled-components";
 
@@ -23,6 +22,15 @@ const NavBar = styled.nav`
     border-bottom: 1px solid #404040;
     margin-bottom: 62px;
     flex-wrap: wrap;
+`;
+
+const LogoWrapper = styled.nav`
+    height: 100%;
+    width: max-content;
+    padding: 24px;
+    :hover {
+        cursor: pointer;
+    }
 `;
 
 const LogoText = styled.h1`
@@ -54,20 +62,6 @@ const LeftSection = styled.section`
     }
 `;
 
-const RightSection = styled.section`
-    display: flex;
-    flex-direction: column;
-    flex-basis: 1;
-    flex-grow: 1;
-    padding: 54px;
-    gap: 42px;
-    @media screen and (max-width: ${columnBreakPoint}px) {
-        width: 80vw;
-        padding: 24px;
-        margin-bottom: 64px;
-    }
-`;
-
 const HeroImage = styled.img`
     height: 30vw;
     width: 30vw;
@@ -82,16 +76,20 @@ const HeroImage = styled.img`
     }
 `;
 
-const Footer = styled.section`
+const RightSection = styled.section`
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 24px;
-    min-height: 320px;
-    border-top: 1px solid #404040;
-    font-weight: 600;
-    font-size: 1.5rem;
+    flex-basis: 1;
+    flex-grow: 1;
+    padding: 54px;
+    gap: 42px;
+    @media screen and (max-width: ${columnBreakPoint}px) {
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding: 24px;
+        margin-bottom: 64px;
+    }
 `;
 
 const BigAssTitle = styled.h1`
@@ -105,13 +103,17 @@ const BodyText = styled.p`
     line-height: 1.5;
     max-width: 80%;
 `;
-const LogoWrapper = styled.nav`
-    height: 100%;
-    width: max-content;
+
+const Footer = styled.section`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 24px;
-    :hover {
-        cursor: pointer;
-    }
+    min-height: 320px;
+    border-top: 1px solid #404040;
+    font-weight: 600;
+    font-size: 1.5rem;
 `;
 
 const pulse = keyframes`
