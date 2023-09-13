@@ -9,6 +9,7 @@ const PageWrapper = styled.main`
     padding: 0;
     margin: auto;
     margin-left: 5px;
+    background-color: #111111;
 `;
 
 const NavBar = styled.nav`
@@ -95,29 +96,20 @@ const LogoWrapper = styled.nav`
 const pulse = keyframes`
 
     0% {
-        /* transform: scale(3.5) rotate(0deg); */
         transform: scale(1) rotate(0deg);
         background-color: #d93512;
         border-color: #d93512;
-        /* transform: rotate(0); */
     }
     50% {
-        /* transform: scale(1); */
-        /* transform: scale(1.5) rotate(180deg); */
         transform: scale(1.15) rotate(2deg);
         background-color: #810069;
         border-color: #810069;
-        /* transform: scale(3.5) rotate(0deg); */
-        /* transform: rotate(0); */
     }
 
     100% {
-        /* transform: scale(1.01); */
-        /* transform: scale(3.5) rotate(360deg); */
         transform: scale(1) rotate(0deg);
         background-color: #d93512;
         border-color: #d93512;
-        /* transform: rotate(360deg); */
     }
 
 
@@ -134,21 +126,26 @@ const ButtonCTA = styled.button`
     width: max-content;
     &:hover {
         cursor: pointer;
-        /* animation: ${pulse} 1.5s infinite linear; */
         animation: ${pulse} 0.55s infinite linear;
+    }
+    &:focus {
+        outline: 2px solid #f9f5f5;
     }
 `;
 
 const NavButtons = styled.button`
     border-radius: 4px;
+    background: transparent;
     &:hover {
         cursor: pointer;
+        background: transparent;
         border: 1 px solid #d93512;
         border: 1 px solid #d93512;
         outline: 1px solid #d93512;
     }
 
     &:focus {
+        background: transparent;
         border: 1 px solid #d93512;
         outline: 1px solid #d93512;
     }
@@ -187,7 +184,7 @@ export function Landing() {
                     <BodyText>
                         In the Wild West of the web, Tor lassos bugs faster than a gunslinger draws his six-shooter.
                         With sharpshootin' skills in HTML to JavaScript, get a site slicker than a greased pig at a
-                        county fair. Don't gamble on glitches; ride into the sunset with Tor.
+                        county fair. Glitches get stitches - ride into the sunset with Tor.
                     </BodyText>
                     <ButtonCTA onClick={() => (window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ")}>
                         Shoot me a message!

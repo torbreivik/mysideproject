@@ -31,6 +31,7 @@ const FullScreenWrap = styled.main`
     min-width: 99vw;
     min-height: 99vh;
     gap: 42px;
+    background-color: #111111;
 `;
 
 function Playground() {
