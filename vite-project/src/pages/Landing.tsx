@@ -68,36 +68,34 @@ const BodyText = styled.p`
     }
 `;
 
-/*
-// const pulse = keyframes`
+const pulse = keyframes`
 
-//     0% {
-//         transform: scale(1) rotate(0deg);
-//         background-color: #d93512;
-//         border-color: #d93512;
-//     }
+    0% {
+        transform: scale(1) rotate(0deg);
+        background-color: #d93512;
+        border-color: #d93512;
+    }
 
-// 25% {
-//         transform: scale(1.1) rotate(1deg);
-//     }
+25% {
+        transform: scale(1.1) rotate(1deg);
+    }
 
-//     50% {
-//         transform: scale(1.0) rotate(1deg);
-//         background-color: #fd9c00;
-//         border-color: #fd9c00;
-//     }
-//     70% {
-//         transform: scale(1.15) rotate(1deg);
-//     }
+    50% {
+        transform: scale(1.0) rotate(1deg);
+        background-color: #fd9c00;
+        border-color: #fd9c00;
+    }
+    70% {
+        transform: scale(1.15) rotate(1deg);
+    }
 
-//     100% {
-//         transform: scale(1) rotate(0deg);
-//         background-color: #d93512;
-//         border-color: #d93512;
-//     }
+    100% {
+        transform: scale(1) rotate(0deg);
+        background-color: #d93512;
+        border-color: #d93512;
+    }
 
-// `;
-*/
+`;
 
 const hearthBeat = keyframes`
     0%, 100% {
@@ -152,6 +150,7 @@ const ButtonCTA = styled.button`
     width: max-content;
     &:hover {
         cursor: pointer;
+        animation: ${pulse} 0.5s infinite ease-in-out;
         animation: ${hearthBeat} 1.65s infinite linear;
     }
     &:focus {
@@ -159,48 +158,48 @@ const ButtonCTA = styled.button`
     }
 `;
 
-// const ButtonCTA2 = styled.button`
-//     border: 2px solid currentColor;
-//     border-radius: 3rem;
-//     color: #ff5100;
-//     font-size: 1.25rem;
-//     overflow: hidden;
-//     padding: 1rem 2rem;
-//     position: relative;
-//     text-decoration: none;
-//     font-weight: 600;
-//     transition: 0.2s transform ease-in-out;
-//     will-change: transform;
-//     z-index: 0;
-//     width: max-content;
+const ButtonCTA2 = styled.button`
+    border: 2px solid currentColor;
+    border-radius: 3rem;
+    color: #ff5100;
+    font-size: 1.25rem;
+    overflow: hidden;
+    padding: 1rem 2rem;
+    position: relative;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.2s transform ease-in-out;
+    will-change: transform;
+    z-index: 0;
+    width: max-content;
 
-//     &::after {
-//         /* background-color: #ff5100; */
-//         background-color: #ff5100;
-//         border-radius: 3rem;
-//         content: "";
-//         display: block;
-//         height: 100%;
-//         width: 100%;
-//         position: absolute;
-//         left: 0;
-//         top: 0;
-//         transform: translate(-100%, 0) rotate(10deg);
-//         transform-origin: top left;
-//         transition: 0.2s transform ease-out;
-//         will-change: transform;
-//         z-index: -1;
-//     }
-//     &:hover::after {
-//         transform: translate(0, 0);
-//     }
-//     &:hover {
-//         border: 2px solid transparent;
-//         color: black;
-//         transform: scale(1.025);
-//         will-change: transform;
-//     }
-// `;
+    &::after {
+        /* background-color: #ff5100; */
+        background-color: #ff5100;
+        border-radius: 3rem;
+        content: "";
+        display: block;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        transform: translate(-100%, 0) rotate(10deg);
+        transform-origin: top left;
+        transition: 0.2s transform ease-out;
+        will-change: transform;
+        z-index: -1;
+    }
+    &:hover::after {
+        transform: translate(0, 0);
+    }
+    &:hover {
+        border: 2px solid transparent;
+        color: black;
+        transform: scale(1.025);
+        will-change: transform;
+    }
+`;
 
 export function Landing() {
     return (
@@ -212,7 +211,7 @@ export function Landing() {
                 <BigAssTitle>TOR THE COWBOY CODER</BigAssTitle>
                 <BodyText>
                     In the Wild West of the web, Tor lassos bugs faster than a gunslinger shoots his foe. With
-                    sharpshootin' skills in HTML to JavaScript, get a site slicker than a greased pig at a county fair.
+                    sharpshootin' skills in HTML and JavaScript, get a site slicker than a greased pig at a county fair.
                     Glitches get stitches - ride into the sunset with Tor.
                 </BodyText>
                 <ButtonCTA onClick={() => (window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ")}>
