@@ -20,7 +20,7 @@ const NavBar = styled.nav`
     align-items: center;
     padding: 24px;
     border-bottom: 1px solid #404040;
-    margin-bottom: 62px;
+    margin-bottom: 82px;
     flex-wrap: wrap;
 `;
 
@@ -85,10 +85,11 @@ const RightSection = styled.section`
     gap: 42px;
     @media screen and (max-width: ${columnBreakPoint}px) {
         align-items: center;
-        justify-content: center;
-        width: 100%;
+        width: 80%;
+        margin: auto;
         padding: 24px;
         margin-bottom: 64px;
+        text-align: center;
     }
 `;
 
@@ -102,6 +103,9 @@ const BodyText = styled.p`
     font-size: 1.45rem;
     line-height: 1.5;
     max-width: 80%;
+    @media screen and (max-width: ${columnBreakPoint}px) {
+        max-width: 100%;
+    }
 `;
 
 const Footer = styled.section`
