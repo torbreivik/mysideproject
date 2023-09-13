@@ -1,7 +1,6 @@
-/* #root {
+#root {
     margin: 0 auto;
-} */
-@import url("https://fonts.googleapis.com/css2?family=Bitter:wght@700&family=Lalezar&family=Montserrat:wght@700&family=Readex+Pro:wght@200;300;400;500;600;700&family=Rye&display=swap");
+}
 * {
     box-sizing: border-box;
     margin: 0;
@@ -10,20 +9,13 @@
     background-color: rgb(15, 15, 15);
     color: rgb(249, 249, 249);
 }
-/* 
+
 .logo {
-    height: 64px;
-    padding: 1.5em;
+    height: 264px;
+    padding: 24px;
+    margin: 12px;
     will-change: filter;
     transition: filter 300ms;
-}
-.logo:hover {
-    filter: drop-shadow(0 0 2em #646cffaa);
-    background-color: rgb(15, 15, 15);
-}
-.logo.react:hover {
-    filter: drop-shadow(0 0 2em #61dafbaa);
-    background-color: rgb(15, 15, 15);
 }
 
 @keyframes logo-spin {
@@ -47,4 +39,4 @@
 
 .read-the-docs {
     color: #888;
-} */
+}
