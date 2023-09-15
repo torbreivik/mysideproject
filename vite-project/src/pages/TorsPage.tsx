@@ -36,6 +36,19 @@ const HeroImage = styled.img`
     max-height: 600px;
   }
 `;
+const LooserImage = styled.img`
+  height: 30vw;
+  width: 30vw;
+  border-radius: 50%;
+  display: block;
+  object-fit: cover;
+  @media screen and (max-width: ${columnBreakPoint}px) {
+    width: 70vw;
+    max-width: 600px;
+    height: 70vw;
+    max-height: 600px;
+  }
+`;
 
 const RightSection = styled.section`
   display: flex;
@@ -58,6 +71,10 @@ const BigAssTitle = styled.h1`
   font-size: clamp(1rem, 6vw, 19.75rem);
   font-family: rye, Helvetica, sans-serif;
   font-weight: 800;
+  border-bottom: 2px solid white;
+  padding-bottom: 32px;
+  border-top: 2px solid white;
+  padding-top: 32px;
 `;
 
 const BodyText = styled.p`
@@ -231,6 +248,7 @@ const coolCowboyFunction = () => {};
 
 const cowboy1 = "/public/cowboy3.jpg";
 const cowboy2 = "/public/cowboy2.jpg";
+const campaignReport = "/public/6.png";
 
 const selectCowboy = (currentCowboy, setCurrentCowboy) => {
   if (currentCowboy === cowboy1) {
@@ -250,7 +268,8 @@ export const TorsPage = () => {
         <HeroImage src={currentCowboy} />
       </LeftSection>
       <RightSection>
-        <BigAssTitle>TOR THE COWBOY CODER</BigAssTitle>
+        <LooserImage src={campaignReport} />
+        <BigAssTitle>TOR THE RIDER OF LINE BRACKETS</BigAssTitle>
         <BodyText>
           In the Wild West of the web, Tor lassos bugs faster than a gunslinger
           shoots his foe. With sharpshootin' skills in HTML and JavaScript, get
