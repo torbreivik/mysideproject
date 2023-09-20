@@ -6,14 +6,24 @@ const CenterSelf = styled.div`
   flex-direction: column;
   /* justify-content: center; */
   align-items: center;
-  outline: solid 1px red;
   width: 100%;
   padding: 24px;
   min-height: 88vh;
 `;
 
-const Headline = styled.h1``;
-const Bodytext = styled.p``;
+const Headline = styled.h1`
+  font-size: clamp(1rem, 6vw, 19.75rem);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: 800;
+  font-style: italic;
+  color: #078507;
+`;
+const Bodytext = styled.p`
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: 800;
+  font-style: italic;
+  color: #078507;
+`;
 const Image = styled.img`
   max-width: 600px;
   max-height: 400px;
