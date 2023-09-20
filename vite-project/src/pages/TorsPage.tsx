@@ -55,7 +55,7 @@ const RightSection = styled.section`
   flex-direction: column;
   flex-basis: 1;
   flex-grow: 1;
-  padding: 54px;
+  padding: 0px 56px 56px 56px;
   gap: 42px;
   @media screen and (max-width: ${columnBreakPoint}px) {
     align-items: center;
