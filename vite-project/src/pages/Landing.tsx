@@ -205,7 +205,7 @@ export function Landing() {
     return (
         <LandingWrapper>
             <LeftSection>
-                <HeroImage src="/public/cowboy2.png" />
+                <HeroImage src="/cowboy2.png" />
             </LeftSection>
             <RightSection>
                 <BigAssTitle>TOR THE COWBOY CODER</BigAssTitle>
