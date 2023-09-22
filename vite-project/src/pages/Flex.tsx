@@ -4,24 +4,25 @@ import { getScreenDimensions } from "../utils/getScreenDimensions";
 const CenterSelf = styled.div`
     display: flex;
     flex-direction: column;
+    /* justify-content: center; */
     align-items: center;
-    outline: solid 1px red;
     width: 100%;
     padding: 24px;
     min-height: 88vh;
 `;
 
 const Headline = styled.h1`
-    font-size: 5vw;
-    @media screen and (max-width: 800px) {
-        font-size: 42px;
-        color: #09f009;
-    }
+    font-size: clamp(1rem, 6vw, 19.75rem);
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-weight: 800;
+    font-style: italic;
+    color: #078507;
 `;
 const Bodytext = styled.p`
-    @media screen and (max-width: 800px) {
-        color: #09f009;
-    }
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-weight: 800;
+    font-style: italic;
+    color: #078507;
 `;
 const Image = styled.img`
     max-width: 600px;
