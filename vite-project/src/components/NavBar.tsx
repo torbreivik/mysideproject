@@ -63,8 +63,11 @@ export function NavBar() {
             </LogoWrapper>
             <LinkSection>
                 <NavButtons onClick={() => navigate("/home")}>Home</NavButtons>
+                <NavButtons onClick={() => navigate("/torspage")}>Tors Page</NavButtons>
                 <NavButtons onClick={() => navigate("/about")}>About</NavButtons>
                 <NavButtons onClick={() => navigate("/services")}>Services</NavButtons>
+                <NavButtons onClick={() => navigate("/flex")}>Flex</NavButtons>
+                <NavButtons onClick={() => navigate("/matrix")}>Matrix</NavButtons>
                 <NavButtons onClick={() => navigate("/playground")}>Portfolio</NavButtons>
             </LinkSection>
         </NavBarStyled>
