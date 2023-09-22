@@ -217,9 +217,9 @@ export function Landing() {
                 <ButtonCTA onClick={() => (window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ")}>
                     Shoot me a message!
                 </ButtonCTA>
-                <ButtonCTA2 onClick={() => (window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ")}>
+                {/* <ButtonCTA2 onClick={() => (window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ")}>
                     Shoot me a message!
-                </ButtonCTA2>
+                </ButtonCTA2> */}
             </RightSection>
         </LandingWrapper>
     );

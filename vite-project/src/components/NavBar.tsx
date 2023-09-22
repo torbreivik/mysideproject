@@ -67,6 +67,7 @@ export function NavBar() {
                 <NavButtons onClick={() => navigate("/about")}>About</NavButtons>
                 <NavButtons onClick={() => navigate("/services")}>Services</NavButtons>
                 <NavButtons onClick={() => navigate("/flex")}>Flex</NavButtons>
+                <NavButtons onClick={() => navigate("/matrix")}>Matrix</NavButtons>
                 <NavButtons onClick={() => navigate("/playground")}>Portfolio</NavButtons>
             </LinkSection>
         </NavBarStyled>

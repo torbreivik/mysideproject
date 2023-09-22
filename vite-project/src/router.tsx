@@ -7,6 +7,7 @@ import { About } from "./pages/About.tsx";
 import { Services } from "./pages/Services.tsx";
 import { TorsPage } from "./pages/TorsPage.tsx";
 import { Flex } from "./pages/Flex.tsx";
+import { MatrixPage } from "./pages/MatrixPage.tsx";
 
 export const router = createBrowserRouter(
     createRoutesFromElements(
@@ -19,6 +20,7 @@ export const router = createBrowserRouter(
                 <Route path="services" element={<Services />} />
                 <Route path="flex" element={<Flex />} />
             </Route>
+            <Route path="matrix" element={<MatrixPage />} />
             <Route path="/playground" element={<Playground />} />
             <Route path="/playground" element={<Playground />} />
         </>
